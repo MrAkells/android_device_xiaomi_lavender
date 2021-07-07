@@ -296,6 +296,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
+#Lawnchair
+PRODUCT_PACKAGES += \
+    Lawnchair \
+    Lawnfeed
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-app.lawnchair.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-app.lawnchair.xml \
+    $(LOCAL_PATH)/configs/app.lawnchair-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/app.lawnchair-hiddenapi-package-whitelist.xml
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.lavender
@@ -352,6 +361,10 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson
+
+#Prebuilts
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # Vibrator
 PRODUCT_PACKAGES += \

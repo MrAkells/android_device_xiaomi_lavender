@@ -7,6 +7,9 @@
 
 DEVICE_PATH := device/xiaomi/lavender
 
+# AICP
+EXCLUDE_LIVE_WALLPAPER := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
